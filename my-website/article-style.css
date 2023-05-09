@@ -1,0 +1,73 @@
+/* I used an online pallet maker website to choose a colour pallete for these webpages because I wanted them to look nice
+So the colors used in the CSS files are from the generated pallete */
+body {
+  background-color:#7284A8;
+}
+
+/* This is the headline on theHeader on each page that welcomes the user to the website
+I wanted the header to only cover half the site so I used 50 % width, I wanted the text on the
+left hand side of the page and I used float to do that. I also played around with Font and found
+Georigia the most aesthetically pleasing  */
+h1 {
+  float: left;
+  width: 50%;
+  font-family:Georgia,serif;
+
+}
+/* Sets the size and color of the header  */
+header{
+  background-color: #474954;
+  color: #A9B3CE;
+  padding: 20px;
+
+}
+
+/* Sets the color, size, orientation, and positioning of the buttons on the header  */
+.button{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #7CDEDC;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+
+}
+
+/* These are the images for the articles. I created a div so that I could format the
+articles all at once instead of formatting the position or direction of the articles one by one
+I wanted the articles to be displayed in a vertical line on the left side of the page and at first
+I did this by playing around with position: absolute, and the bottom, left values but then
+I wanted to see if there was an easier way to do this since it is a basic way of formatting and
+I found display: flex on google.
+
+gap creates a space between images so they are not stacked on top of each other - played around with px until it looked nice  */
+.image-container{
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+/* this controls the size of the images   */
+.image-container img{
+  max-width: 180px;
+}
+
+/* this controls the texts placement to the image - i had to use image-container img and image-container p because
+I had nested the img, p, in the <a> on the articles.html file and nested all of that in a <div class="image-container">   */
+.image-container p{
+  margin: 0;
+}
+
+/* on the article1.html, article2,html, article3.html files I wanted the reference to be bolded so I put them in a class
+so I didn't have to keep formatting them separately in each file  */
+.reference{
+  font-style: bold;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <!--Linked to style.css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Webpage header with 3 buttons: Home, Articles, About -->
+    <header>
+      <h1>PsychLit</h1>
+      <div class="button">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="button">
+        <a href="articles.html">Articles</a>
+      </div>
+      <div class="button">
+        <a href="about.html">About</a>
+      </div>
+    </header>
+    <!--Br creates a space - just so the page is more visually appealing -->
+      <br>
+      <h7>Contact Us</h7>
+      <br>
+      <br>
+      <p10>If you have any questions or inquiries, feel free to contact the creator using the information below Or have us contact you by filling out the form below:  </p10>
+
+      <h8>Contact Information:</h8>
+      <ul>
+        <li>Email: <a href="<a href="mailto:psychlit@example.com>psychlit@example.com</a></li>
+        <li>Phone: +1 (555) 123-4567</li>
+        <li>Fax: +1 (555) 891 0111</li>
+      </ul>
+
+      <p11>Note: The phone numbers above are not real. They have been included to make the webpage feel more authentic.</p11>
+      <br>
+      <br>
+
+
+      <!-- I decided to reuse some of the code I worked on for another coding project from one of my classes
+          This creates a contact form which basically allows the user to enter their name and email and submit it
+          However it is really basic code so there is no verification of email or no database where any of this information is stored
+          I decided to add this for authenticity and aesthetic purposes-->
+      <h1>Contact Form:</h1>
+
+      <form id="contactForm">
+        <br>
+      <!-- Label is basically the same thing as a headline text -->
+    <label for="name">Name:</label>
+    <!-- Input allows the user to input information into the text box created by input-->
+    <input type="text" id="name" name="name">
+    <!--br is a break line which basically just creates a space betweeen lines for aesthetic purposes -->
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <br>
+    <!-- Button the user can press to submit the information they inputted-->
+    <button type="submit">Submit</button>
+  </form>
+
+<!--Javascript code
+    an event listener is created and it waits for the user to press the submit button
+  when the form is submitted the prevent default stops the page from refreshing
+  when the form is submitted the alert function gives you a submitted message-->
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Form submitted successfully!');
+    });
+  </script>
+    <!-- The above code doesn't actually do anything or store any of the information submitted by the user, theres no validation performed or a database that the information is sent to-->
+  </body>
+</html>

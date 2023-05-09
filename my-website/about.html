@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About PsychLit</title>
+    <!-- link to CSS page-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- all html pages of the website include a header for aesthetic purposes but also to make navigating the webpage easier for the users
+  This webpage contains a Home, Articles, and Contacts button. I removed the About button since this is the About page of the websites
+the <a> is what allows the user to navigate between pages - as it is what opens up the webpage linked to the button the user clicks  -->
+    <header>
+      <h1>PsychLit</h1>
+      <div class="button">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="button">
+        <a href="articles.html">Articles</a>
+      </div>
+      <div class="button">
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </header>
+    <!-- The following are headers and explanation text for the headers -->
+    <h3>About PsychLit</h3>
+    <p4>Welcome to PsychLit! A source for summarized research articles</p4>
+    <br>
+    <p5>Fun fact: When coming up with the name, I was thinking of this page as a place where I can recycle old works that I have
+    and so PsychLit it a place on the ennunciation of recycle it!</p5>
+
+    <h4>Our Mission</h4>
+    <p6>PsychLit is a place for literature in psychology to be posted and read. The references as well as links to the articles are included.
+    There is no plagarism involved as all articles posted here have been summarized by myself (the creator of this site) personally. </p6>
+
+    <h5>How It Works</h5>
+    <p7>Simply find the article that interests you most from our Articles page and begin reading.</p7>
+
+    <h6>Thank You!</h6>
+    <p8>I appreciate your support of PsychLit. Thank you for visiting!</p8>
+    <br>
+    <p9>Don't forget to share the website so others can benefit from it as well </p>
+
+    <!--I took an android programming class last semester and so I am familiar with the onclick and listener built ins
+  Here I used javascript to create 3 button a share on  facebook, twitter, and instagram button. I don't feel as comfortable using Atom as I do VSCode and
+when working with HTML in VSCode you can include script in the html file so that is what I did instead of creating a new JS file and it worked
+I put all 3 buttons in a div so that I could edit their size and other features in the accompanying CSS file -->
+    <div class="buttons-container">
+      <button onclick="shareOnFacebook()">Share on Facebook</button>
+      <button onclick="shareOnTwitter()">Share on Twitter</button>
+      <button onclick="shareOnInstagram()">Share on Instagram</button>
+
+    </div>
+<!-- This is the javascript code. There are 3 functions that use windows.open to open the facebook, twitter, and instagram pages respectively -->
+    <script type="text/javascript">
+      function shareOnFacebook(){
+        window.open('https://www.facebook.com');
+      }
+      function shareOnTwitter(){
+        window.open('https://twitter.com');
+      }
+      function shareOnInstagram(){
+        window.open('https://instagram.com');
+      }
+    </script>
+  </body>
+</html>

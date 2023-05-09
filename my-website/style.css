@@ -1,0 +1,159 @@
+/* I used an online pallet maker website to choose a colour pallete for these webpages because I wanted them to look nice
+So the colors used in the CSS files are from the generated pallete */
+body {
+  background-color:#7284A8;
+}
+
+/* This is the headline on theHeader on each page that welcomes the user to the website
+I wanted the header to only cover half the site so I used 50 % width, I wanted the text on the
+left hand side of the page and I used float to do that. I also played around with Font and found
+Georigia the most aesthetically pleasing  */
+
+h1 {
+
+  float: left;
+  width: 50%;
+  font-family:Georgia,serif;
+
+}
+
+/* Welcome message on index.html that welcomes the user to the site, I played around with the position and font until it looked visually appealing especially in realtion to the pictures on the page */
+h2{
+  position: absolute;
+  top: 140px;
+  width: 50%;
+  font-family:Georgia,serif;
+  font-size: 25pt;
+
+}
+
+/* on about.html page -> formats headers */
+h3,h4,h5,h6{
+  text-align: center;
+  font-size: 16pt;
+  font-family: Georgia,serif;
+}
+/* on contacts.html formats titles/headers */
+h7{
+  font-size: 20pt;
+  font-style: bold;
+}
+
+/* Paragraph describing the website on the index.html page */
+p{
+  position: absolute;
+  top: 205px;
+  width: 50%;
+  font-family:Times,serif;
+}
+
+/* on index.html page - title of featured article  */
+p2{
+  position: absolute;
+  bottom: 195px;
+  right: -12px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 15pt;
+
+}
+
+/*on index.html page - text accompanying featured article */
+p3{
+  position: absolute;
+  bottom: 75px;
+  right: 65px;
+  width: 40%;
+}
+/* on about.html page formats text */
+p4,p5,p6,p7,p8,p9{
+  text-align: justify;
+  padding: 10px;
+  font-family: Times,serif;
+}
+
+/* image on index.html corresponding to h1 and p */
+img.large-image{
+  position: absolute;
+  top:10px;
+  left:10px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* image on index.html corresponding to h2 and p2,p3  */
+img.medium-image{
+  position: absolute;
+  bottom: 10px;
+  right: 1:0px;
+  width: 50%;
+  border-radius:20px;
+
+}
+
+/* Image caption on index.html corresponding to the featured article */
+p.image-caption{
+  position: relative;
+  bottom:50px;
+  clear: both;
+  font-family: monospace;
+  color: #FFF;
+}
+/* Sets the size and color of the header  */
+header{
+  background-color: #474954;
+  color: #A9B3CE;
+  padding: 20px;
+
+}
+
+/* Sets the color, size, orientation, and positioning of the buttons on the header  */
+.button{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #7CDEDC;S
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+  border: 1px solid #000;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+
+}
+
+/* on index.html -> formatting of the learn more button  */
+.learn-more{
+  position: relative;
+  background-color:#A9B3CE;
+  padding: 7px;
+  top: 260px;
+  left: 280px;
+  width: 12%;
+  height: 15px;
+}
+
+/* on index.html -> formatting of the read article button */
+.read{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #A9B3CE;
+}
+ /*on the about.html page -> formats the share on facebook, twitter, and instagram buttons  */
+.buttons-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+
+}
+
+/* on about.html adds space between the buttons so they're evenly spaced 10px apart*/
+.buttons-container button {
+  margin: 0 10px;
+}

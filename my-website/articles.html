@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Articles</title>
+    <!--2 CSS files - the article-style.css is used to format all article pages-->
+    <link rel="stylesheet" type="text/css" href="article-style.css">
+  </head>
+  <body>
+    <!--All webpages include a header - this one has 3 buttons: Home (index.html), About (about.html), Contacts (contacts.html) when the buttons are pressed they navigate to chosen webpage -->
+    <header>
+      <h1>PsychLit</h1>
+      <div class="button">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="button">
+        <a href="about.html">About</a>
+      </div>
+      <div class="button">
+        <a href="contacts.html">Contacts</a>
+      </div>
+    </header>
+
+    <!--Page title -->
+    <h2>Articles</h2>
+    <!--Images are put into a div called image container to make formating in the linekd CSS file easier-->
+    <div class="image-container">
+      <!--The image, and the link+title of the image is nested in <a> so that when the text <p> is clicked it redirects to the corresponding html for each article
+          For example, when the <p> corresponding to the first image cultureinprimates is clicked, the user is redirected to article1.html-->
+      <a href="article1.html">
+        <img src="cultureinprimates.jfif" alt="Article1">
+          <p>Infectious Disease, behavioural flexibility and the Evolution of Culture in Primates</p>
+      </a>
+      <a href="article2.html">
+        <img src="article2.jfif" alt="Article2">
+          <p>Emergence of a Peaceful Culture in Wild Baboons</p>
+      </a>
+      <a href="article3.html">
+        <img src="article 3.jfif" alt="Article3">
+          <p>Strongest Evidence of Animal Culture Seen in Monkeys and Whales</p>
+      </a>
+    </div>
+
+
+  </body>
+</html>
